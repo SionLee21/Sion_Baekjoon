@@ -2,15 +2,15 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        long input,first_num,back_num;
-        input=s.nextLong();
+        int input,first_num,back_num;
+        input=s.nextInt();
         long count=input;
-        long student_list[]=new long [1000000];
+        int student_list[]=new int [input];
         for(int i=0; i<input; i++){
-            student_list[i]=s.nextLong();
+            student_list[i]=s.nextInt();
         }
-        first_num=s.nextLong();
-        back_num=s.nextLong();
+        first_num=s.nextInt();
+        back_num=s.nextInt();
         for(int i=0; i<input; i++){
             student_list[i]-=first_num;
             if(student_list[i]>0)
